@@ -1,0 +1,15 @@
+#! /bin/sh
+### BEGIN INIT INFO
+# Provides: ksz9879
+# Required-Start: $local_fs $network $remote_fs
+# Should-Start: $time
+# Required-Stop: $local_fs $network $remote_fs
+# Should-Stop:
+# Default-Start:  3 4 5
+# Default-Stop: 0 1 2 6
+# Short-Description: start and stop MyApp
+# Description: MyApp is a very fast and reliable application
+#              used for illustrating init scripts
+### END INIT INFO
+
+echo ksz9897 0x5f > /sys/bus/i2c/devices/i2c-0/new_device 
